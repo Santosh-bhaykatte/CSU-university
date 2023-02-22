@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href=" style.css">
+
+    <title> CSU System | Donate </title>
+</head>
+
+<body>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start offcanvas-box" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header  align-items-start">
+            <h5 class="offcanvas-title fs-2" id="offcanvasWithBothOptionsLabel">Welcome To The World`s Most
+                Consequential <br>
+                University In The World</h5>
+            <button type="button" class="btn-close text-white bg-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul id="canvas-ul">
+                <li class="canvas-li"><a class="   canvas-link pe-auto" href="#">Attend</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li class="canvas-li"><a href="#" class="canvas-link">Impact of the CSU</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li class="canvas-li"><a href="#" class="canvas-link">The CSU System</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li class="canvas-li"><a href="#" class="canvas-link">CSU Campuses</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+            </ul>
+
+            <ul id="canvas-ul-2" class="d-block d-md-none">
+                <li class="canvas-li"><a href="apply.html" class="canvas-link-2 pe-auto"> Apply</a></li>
+                <li class="canvas-li"><a href="careers.html" class="canvas-link-2 pe-auto">Careers</a></li>
+              
+                <li class="canvas-li"><a href="contact.html" class="canvas-link-2">Contact</a></li>
+                <li class="canvas-li"><a href="index.html" class="canvas-link-2">Home</a></li>
+                <li class=" canvas-li  dropdown">
+                    <button class="btn btn-sm  dropdown-toggle "
+                        style="color: #2f2f2f; font-size: 18px; position: relative; right: 10px; top: 4px; "
+                        type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        Courses
+                    </button>
+                    <ul class="dropdown-menu border-1" aria-labelledby="navbarDropdown">
+                        <li>
+                            <h6 class="dropdown-item fw-bold text-dark">Technology</h6>
+                        </li>
+                        <li><a class="dropdown-item csu-link" href="#">Btech CS</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">Btech AI</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">Btech Mech</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">Btech Civil</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">BCA</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">BSc.CS</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h6 class="dropdown-item fw-bold text-dark">Management</h6>
+                        </li>
+                        <li><a class="dropdown-item csu-link" href="#">B.Com</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">M.Com</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">BBA</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">MBA</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">Bsc HS</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h6 class="dropdown-item fw-bold text-dark">Honours</h6>
+                        </li>
+                        <li><a class="dropdown-item csu-link" href="#">Bsc Bio</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">Bsc Chem</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">Bsc Math</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">Bsc Phy</a></li>
+                        <li><a class="dropdown-item csu-link" href="#">Bsc Biotech</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item csu-link" href="#">View More <i
+                                    class="bi bi-box-arrow-up-right"></i></a></li>
+
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- canvas form -->
+
+            <form id="canvas-form">
+                <input class="form-control me-2" type="search" placeholder="Type To Search..." aria-label="Search"
+                    id="canvas-search-box">
+                <button class="btn border" type="submit" id="search-btn"><i class="bi bi-search text-white"
+                        style="font-size: 18px;"></i></button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="nav">
+        <div class="container-fluid">
+
+            <!-- offcanvas button-->
+
+            <button class="btn border rounded  me-4 ms-1" id="menu" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                    class="bi bi-list  text-dark" style="font-size: 35px;"></i></button>
+
+            <!--  -->
+
+            <a class="navbar-brand" href="index.html"><img src=" logo.png" class="img-fluid" id="logo"></a>
+            <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0" id="nav-ul">
+                    <li class="nav-item">
+                        <a class="nav-link active csu-link d-none d-lg-block" aria-current="page"
+                            href="apply.html">Apply</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link csu-link ps-3" href="careers.html">Careers</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link csu-link ps-3" href=" contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link csu-link ps-3" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle csu-link ps-3" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu border-1" aria-labelledby="navbarDropdown">
+                            <li>
+                                <h6 class="dropdown-item fw-bold text-dark">Technology</h6>
+                            </li>
+                            <li><a class="dropdown-item csu-link" href="#">Btech CS</a></li>
+                            <li><a class="dropdown-item csu-link" href="#">Btech AI</a></li>
+                            <li><a class="dropdown-item csu-link" href="#">Btech Mech</a></li>
+                            <li><a class="dropdown-item csu-link" href="#">Btech Civil</a></li>
+                            <li><a class="dropdown-item csu-link" href="#">BCA</a></li>
+                            <li><a class="dropdown-item csu-link" href="#">BSc.CS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-item fw-bold text-dark  ">Management</h6>
+                            </li>
+                            <li><a class="dropdown-item csu-link  " href="#">B.Com</a></li>
+                            <li><a class="dropdown-item csu-link  " href="#">M.Com</a></li>
+                            <li><a class="dropdown-item csu-link  " href="#">BBA</a></li>
+                            <li><a class="dropdown-item csu-link  " href="#">MBA</a></li>
+                            <li><a class="dropdown-item csu-link  " href="#">Bsc HS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-item fw-bold text-dark">Honours</h6>
+                            </li>
+                            <li><a class="dropdown-item csu-link" href="#">Bsc Bio</a></li>
+                            <li><a class="dropdown-item csu-link" href="#">Bsc Chem</a></li>
+                            <li><a class="dropdown-item csu-link" href="#">Bsc Math</a></li>
+                            <li><a class="dropdown-item csu-link" href="#">Bsc Phy</a></li>
+                            <li><a class="dropdown-item csu-link" href="#">Bsc Biotech</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item csu-link" href="#">View More <i
+                                        class="bi bi-box-arrow-up-right"></i></a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <a href="facebook.com" class="d-none d-lg-block"><i class="bi bi-facebook nav-icon ms-3"></i></a>
+                <a href="twitter.com" class="d-none d-lg-block"><i class="bi bi-twitter nav-icon ms-3"></i></a>
+                <a href="instagram.com" class="d-none d-lg-block"><i class="bi bi-instagram nav-icon ms-3"></i></a>
+
+
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search"
+                        id="search-box">
+                    <button class="btn border" type="submit" id="search"><i class="bi bi-search text-dark"
+                            style="font-size: 18px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- main -->
+
+    <div class="container-fluid">
+        <!-- apply section -->
+        <div class="row">
+            <div class="col-12">
+                <img src=" Give-Hero.jpg" alt="" class="img-fluid" id="apply-img">
+            </div>
+            <div class="col-12 mt-4  mt-md-5  pb-0 pb-md-4">
+                <h1 class="display-4 text-center mb-md-5 mb-4 lh-sm" style="color: #CC0B2A;">
+                    Support the CSU
+                </h1>
+                <p class="lh-base text-center mb-5 fs-5">
+                    Every day, the CSU works to maximize the investment made by the generous support of people like you.
+                </p>
+            </div>
+        </div>
+
+        <div class="row bg-light pb-5">
+            <div class="col-12">
+                <div class="row mb-4">
+                    <div class="col-12 pt-md-5 pt-4 pb-md-2 pb-1 text-center">
+                        <h2 class="  text-center lh-sm" style="color: #CC0B2A; font-size: 28px;">​Give to the CSU
+                        </h2>
+                        <p class="lh-base text-center mt-4" style="font-size: 18px;">
+                            Make a gift to a specific campus, to a scholarship fu​nd, or for another purpose specified
+                            by you.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5 pt-3">
+                    <div class="col-md-4 col-11 me-0 me-md-3">
+                        <h3 class="donate-heading  mb-3 mb-md-4 ">Give to a Campus</h3>
+                        <select class="form-select border border-secondary" aria-label="Default select example"
+                            style="cursor: pointer;">
+                            <option selected>Select A Campus</option>
+                            <option value="1" style="cursor: pointer;"> San Jose</option>
+                            <option value="2" style="cursor: pointer;"> Jos Angles</option>
+                            <option value="3" style="cursor: pointer;">San Francisco</option>
+                            <option value="3" style="cursor: pointer;">California - East</option>
+                        </select>
+                        <a href="#" class="btn donate-btn">Apply Now</a>
+                    </div>
+                    <div class="col-md-4 col-11 mt-5 mt-md-0 ms-0 ms-md-3">
+                        <h3 class="donate-heading mb-3 mb-md-4">Give to The CSU System</h3>
+                        <select class="form-select border border-secondary" aria-label="Default select example"
+                            style="cursor: pointer;">
+                            <option selected>Select A Term To Donate For</option>
+                            <option value="1" style="cursor: pointer;">Fall 2023</option>
+                            <option value="2" style="cursor: pointer;">Summer 2023</option>
+                            <option value="3" style="cursor: pointer;">Spring 2023 </option>
+                            <option value="3" style="cursor: pointer;">Winter 2023 </option>
+                        </select>
+                        <a href="#" class="btn donate-btn">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container - fluid end -->
+    </div>
+
+
+
+    <div class="container pt-4 pb-4">
+        <div class="row justify-content-evenly pt-3 pb-5">
+            <div class="col-md-5 col-11 border border-1 rounded-3  px-5 mt-3 mt-md-0  pb-5"
+                style="padding-top: 40px;  ">
+                <h2 class="lead  text-start mb-4  lh-sm" style="color: #6d6d6d; font-size: 28px;"> CSU Cares
+                </h2>
+                <img src="CSU-Cares.jpg" alt="" class="img-fluid" style="width: 100%;">
+                <p class="lh-base mt-3 mb-3" style="font-size: 14px;">
+                    CSU Cares supports students experiencing food insecurity and housing displacement, as well as those
+                    who find themselves in other emergency situations.</p>
+                <a href="#" class="btn cares-btn">Learn How You Can Help</a>
+            </div>
+            <div class="col-md-5 col-11 border border-1 mt-5 mt-md-0  rounded-3 px-5  pb-5"
+                style="padding-top: 40px;  ">
+                <h2 class="lead  text-start mb-4 lh-sm" style="color: #6b6b6b; font-size: 28px;"> Reconnect with Your
+                    Campus
+                </h2>
+                <img src="4million-thumb.jpg" alt="" class="img-fluid" style="width: 100%;">
+                <p class="lh-base mt-3 mb-3" style="font-size: 14px;">
+                    As a CSU alumna or alumnus, you're part of a network that's more than four million strong.</p>
+                <a href="#" class="btn reconnect-btn">Find Your Campus Alumni </a>
+            </div>
+        </div>
+        <!-- container end -->
+    </div>
+
+    <!-- container-fluid  -->
+
+    <div class="container-fluid bg-light py-5">
+        <div class="row pb-5">
+            <div class="col-12 text-center">
+                <h2 class="lead  text-center mb-4  lh-sm" style="color: #6d6d6d; font-size: 28px;">The CSU Foundation
+                </h2>
+                <p class="lh-base mt-3 mb-3" style="font-size: 14px;">The Foundation works with donors and grant makers
+                    to provide support for scholarships, research,<br> service learning, and other programs that enhance
+                    the educational excellence of the university.
+                </p>
+                <a href="#" class="btn reconnect-btn"> Learn More About The CSU Foundation </a>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4 col-11 me-md-5 me-0">
+                <h3 class="donate-heading  mb-3 mb-md-4 ">Give to a Campus</h3>
+                <img src="TA-Thumb.jpg" alt="" class="img-fluid" style="width: 100%;">
+                <p class="lh-base mt-3 mb-4" style="font-size: 14px;"> Every September, students are honored for their scholarship, service and accomplishments.
+                </p>
+                <p class="lh-base"  style="font-size: 14px;">
+                <a href="#" style="text-decoration: none; color: #CC0B2A;">Meet​ the Awardees​​ >></a></p>
+            </div>
+            <div class="col-md-4 col-11 ms-md-5 ms-0 mt-5 mt-md-0">
+                <h3 class="donate-heading  mb-3 mb-md-4 "> Donor Support Annual Report</h3>
+                <img src="donor-support-home-thumb.jpg" alt="" class="img-fluid" style="width: 100%;">
+                <p class="lh-base mt-3 mb-4" style="font-size: 14px;"> Each year, CSU's donors give strong support that creates a lasting impact on the university.
+                </p>
+                <p class="lh-base"  style="font-size: 14px;">
+                <a href="#" style="text-decoration: none; color: #CC0B2A;">Read the Report >></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4 pb-4">
+        <!-- apply-slider  -->
+        <div class="row justify-content-evenly py-5 mt-3">
+            <div class="col-md-8 col-11">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <iframe width="430" height="315" src="https://www.youtube.com/embed/OfQgDaGMqmM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="rounded-3 ratio ratio-16x9"></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/p_bAJSaf_VY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="rounded-3 ratio ratio-16x9"></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UG6j7r4yswI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="rounded-3 ratio ratio-16x9"></iframe>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <hr style="display: block; width:85%; margin: 18px auto;">
+
+
+        <!-- news -->
+        <div class="row mt-1 pb-3 justify-content-evenly">
+            <div class="col-12 text-center my-5 ">
+                <h2 style="font-size: 24px; font-weight:500;">IN THE SPOTLIGHT</h2>
+            </div>
+            <div class="col-md-3 col-11 pt-3 mt-3 pt-md-0">
+                <img src="CSUSM - rankings.jpg.png" alt="" class="img-fluid" style="width: 100%;">
+                <p class="lh-base mt-2 news-para"><a href="#">CHANCELLOR’S STATEMENT ON DACA DECISION OF FIFTH CIRCUIT
+                        COURT OF
+                        APPEALS</a>
+                </p>
+
+            </div>
+            <div class="col-md-3 col-11 pt-3 mt-3 pt-md-0">
+                <img src="students-on-campus_45762803575_o.jpg" alt="" class="img-fluid" style="width: 100%;">
+                <p class="lh-base mt-2 news-para"><a href="#">CSU’S DILCIE PEREZ TAPPED FOR STATEWIDE TASK FORCE TO
+                        ADVANCE
+                        HOUSING SECURITY</a>
+                </p>
+
+            </div>
+            <div class="col-md-3 col-11 pt-3 mt-3 pt-md-0">
+                <img src="CSU SAC STATE PRES.png" alt="" class="img-fluid" style="width: 100%;">
+                <p class="lh-base mt-2 news-para"><a href="#">CSU’S DILCIE PEREZ TAPPED FOR STATEWIDE TASK FORCE TO
+                        ADVANCE
+                        HOUSING SECURITY</a>
+                </p>
+
+            </div>
+            <div class="col-md-3 col-11 pt-3 mt-3 pt-md-0">
+                <img src="slider-3.jpg" alt="" class="img-fluid" style="width: 100%;">
+                <p class="lh-base mt-2 news-para"><a href="#">STATEMENT ON PENDING RETIREMENT OF CALIFORNIA STATE
+                        UNIVERSITY,
+                        SACRAMENTO PRESIDENT ROBERT S. NELSEN</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- container end -->
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid " id="footer-body">
+        <footer class="text-gray-600 body-font">
+            <div class="container px-5 pt-12 mx-auto mt-10">
+                <div class="flex flex-wrap md:text-left text-center order-first ">
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4  footer-link">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">Attend</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Campuses</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Admissions</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Paying for College</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Transfer</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Student Services</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">International</a>
+                            </li>
+                        </nav>
+                    </div>
+
+
+
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4 footer-link">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">Impact of the CSU
+                        </h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Diversity</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Student Success</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Research</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Alumni </a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Sustainability</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Business & Economy </a>
+                            </li>
+                        </nav>
+                    </div>
+
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4 footer-link">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">The CSU System
+                        </h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">About the CSU</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Why the CSU Matters</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Leadership</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Faculty & Staff</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Data Insights </a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">CSU Budget </a>
+                            </li>
+                        </nav>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4 footer-link">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3"> CSU CAMPUSES</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links"> San José</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links"> San Luis Obispo</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links"> San Marcos</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Stanislaus</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Sonoma </a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 footer-links">Jos Angles</a>
+                            </li>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- bottom to top btn -->
+            <p class="float-end mb-1">
+                <a href="#"><i class="bi bi-arrow-up-square-fill fixed-end" id="back-to-top"></i></a>
+            </p>
+
+            <div class="bg-gray-100" id="footer-end">
+                <div class="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
+                    <a href="index.html"
+                        class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                        <img src=" logo.png" alt="" class="img-fluid mt-1 " style="width: 150px;
+         ">
+
+                    </a>
+                    <p class="text-lg text-gray-900 sm:ml-6 sm:mt-0 mt-4"><i class="bi bi-c-circle me-1"></i> 2022 Cyf
+                        Platforms
+                        Inc. —
+                        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer"
+                            class="text-gray-600 ml-1 footer-links" target="_blank">@Santosh_bhaykatte</a>
+                    </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                        <a class="text-gray-500 footer-links">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500 footer-links">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500 footer-links">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500 footer-links">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path stroke="none"
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

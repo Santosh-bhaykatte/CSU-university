@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css">
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="style.css">
+
+  <title> CSU University </title>
+</head>
+
+<body>
+
+  <div class="offcanvas offcanvas-start offcanvas-box" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header  align-items-start">
+      <h5 class="offcanvas-title fs-2" id="offcanvasWithBothOptionsLabel">Welcome To The World`s Most Consequential <br>
+        University In The World</h5>
+      <button type="button" class="btn-close text-white bg-white" data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul id="canvas-ul">
+        <li class="canvas-li"><a class="   canvas-link pe-auto" href="#">Attend</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li class="canvas-li"><a href="#" class="canvas-link">Impact of the CSU</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li class="canvas-li"><a href="#" class="canvas-link">The CSU System</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li class="canvas-li"><a href="#" class="canvas-link">CSU Campuses</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+      </ul>
+
+      <ul id="canvas-ul-2" class="d-block d-md-none">
+        <li class="canvas-li"><a href="donate.html" class="canvas-link-2 pe-auto">Donate</a></li>
+        <li class="canvas-li"><a href="careers.html" class="canvas-link-2 pe-auto">Careers</a></li>
+
+        <li class="canvas-li"><a href="contact.html" class="canvas-link-2">Contact</a></li>
+        <li class="canvas-li"><a href="apply.html" class="canvas-link-2">Apply</a></li>
+        <li class=" canvas-li  dropdown">
+          <button class="btn btn-sm  dropdown-toggle "
+            style="color: #2f2f2f; font-size: 18px; position: relative; right: 10px; top: 4px; " type="button"
+            id="dropdownMenuButton" data-bs-toggle="dropdown">
+            Courses
+          </button>
+          <ul class="dropdown-menu border-1" aria-labelledby="navbarDropdown">
+            <li>
+              <h6 class="dropdown-item fw-bold text-dark">Technology</h6>
+            </li>
+            <li><a class="dropdown-item csu-link" href="#">Btech CS</a></li>
+            <li><a class="dropdown-item csu-link" href="#">Btech AI</a></li>
+            <li><a class="dropdown-item csu-link" href="#">Btech Mech</a></li>
+            <li><a class="dropdown-item csu-link" href="#">Btech Civil</a></li>
+            <li><a class="dropdown-item csu-link" href="#">BCA</a></li>
+            <li><a class="dropdown-item csu-link" href="#">BSc.CS</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <h6 class="dropdown-item fw-bold text-dark">Management</h6>
+            </li>
+            <li><a class="dropdown-item csu-link" href="#">B.Com</a></li>
+            <li><a class="dropdown-item csu-link" href="#">M.Com</a></li>
+            <li><a class="dropdown-item csu-link" href="#">BBA</a></li>
+            <li><a class="dropdown-item csu-link" href="#">MBA</a></li>
+            <li><a class="dropdown-item csu-link" href="#">Bsc HS</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <h6 class="dropdown-item fw-bold text-dark">Honours</h6>
+            </li>
+            <li><a class="dropdown-item csu-link" href="#">Bsc Bio</a></li>
+            <li><a class="dropdown-item csu-link" href="#">Bsc Chem</a></li>
+            <li><a class="dropdown-item csu-link" href="#">Bsc Math</a></li>
+            <li><a class="dropdown-item csu-link" href="#">Bsc Phy</a></li>
+            <li><a class="dropdown-item csu-link" href="#">Bsc Biotech</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item csu-link" href="#">View More <i class="bi bi-box-arrow-up-right"></i></a></li>
+
+          </ul>
+        </li>
+      </ul>
+      <!-- canvas form -->
+
+      <form id="canvas-form">
+        <input class="form-control me-2" type="search" placeholder="Type To Search..." aria-label="Search"
+          id="canvas-search-box">
+        <button class="btn border" type="submit" id="search-btn"><i class="bi bi-search text-white"
+            style="font-size: 18px;"></i></button>
+      </form>
+
+    </div>
+  </div>
+
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="nav">
+    <div class="container-fluid">
+      
+      <!-- offcanvas button-->
+      <button class="btn border rounded  me-4 ms-1" id="menu" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+          class="bi bi-list  text-dark" style="font-size: 35px;"></i></button>
+
+      <!--  -->
+
+      <a class="navbar-brand" href="index.html"><img src=" logo.png" class="img-fluid" id="logo"></a>
+      <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0" id="nav-ul">
+          <li class="nav-item">
+            <a class="nav-link active csu-link d-none d-lg-block" aria-current="page" href="donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link csu-link ps-3" href="careers.html">Careers</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link csu-link ps-3" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link csu-link ps-3" href="apply.html">Apply</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle csu-link ps-3" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu border-1" aria-labelledby="navbarDropdown">
+              <li>
+                <h6 class="dropdown-item fw-bold text-dark">Technology</h6>
+              </li>
+              <li><a class="dropdown-item csu-link" href="#">Btech CS</a></li>
+              <li><a class="dropdown-item csu-link" href="#">Btech AI</a></li>
+              <li><a class="dropdown-item csu-link" href="#">Btech Mech</a></li>
+              <li><a class="dropdown-item csu-link" href="#">Btech Civil</a></li>
+              <li><a class="dropdown-item csu-link" href="#">BCA</a></li>
+              <li><a class="dropdown-item csu-link" href="#">BSc.CS</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <h6 class="dropdown-item fw-bold text-dark  ">Management</h6>
+              </li>
+              <li><a class="dropdown-item csu-link  " href="#">B.Com</a></li>
+              <li><a class="dropdown-item csu-link  " href="#">M.Com</a></li>
+              <li><a class="dropdown-item csu-link  " href="#">BBA</a></li>
+              <li><a class="dropdown-item csu-link  " href="#">MBA</a></li>
+              <li><a class="dropdown-item csu-link  " href="#">Bsc HS</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <h6 class="dropdown-item fw-bold text-dark">Honours</h6>
+              </li>
+              <li><a class="dropdown-item csu-link" href="#">Bsc Bio</a></li>
+              <li><a class="dropdown-item csu-link" href="#">Bsc Chem</a></li>
+              <li><a class="dropdown-item csu-link" href="#">Bsc Math</a></li>
+              <li><a class="dropdown-item csu-link" href="#">Bsc Phy</a></li>
+              <li><a class="dropdown-item csu-link" href="#">Bsc Biotech</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item csu-link" href="#">View More <i class="bi bi-box-arrow-up-right"></i></a></li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+        <a href="facebook.com" class="d-none d-lg-block"><i class="bi bi-facebook nav-icon ms-3"></i></a>
+        <a href="twitter.com" class="d-none d-lg-block"><i class="bi bi-twitter nav-icon ms-3"></i></a>
+        <a href="instagram.com" class="d-none d-lg-block"><i class="bi bi-instagram nav-icon ms-3"></i></a>
+
+
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" id="search-box">
+          <button class="btn border" type="submit" id="search"><i class="bi bi-search text-dark"
+              style="font-size: 18px;"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- slider  -->
+
+  <div id="carouselExampleCaptions" class="carousel slide slider" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="slider-1.jpg" class="d-block w-100 img-resp img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4 class="text-lowercase fs-5">LEADING THE AGRICULTURE
+            INDUSTRY TO A SUSTAINABLE FUTURE</h4>
+          <a href="sign_up.html" class="btn btn-primary bg-gradient my-3 rounded-pill px-3">Register Now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="slider-2.jpg" class="d-block w-100 img-resp img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4 class="text-lowercase fs-5">STUDENT VETERANS FIND
+            COMMUNITY AT THE CSU</h4>
+          <button class="btn btn-primary bg-gradient my-3 rounded-pill px-3" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Sign In</button> 
+ 
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="slider-3.jpg" class="d-block w-100 img-resp img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4 class="text-lowercase text-dark fs-5">CSU STUDENTS SERVE THEIR COMMUNITIES THROUGH COLLEGE CORPS</h4>
+          <a href="#" class="btn btn-primary bg-gradient my-3 rounded-pill px-3">Explore More</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- main -->
+  <div class="container pt-5 pb-2">
+    <div class="row justify-content-center  pt-md-5 pb-4">
+      <div class="col-12 text-center">
+        <h3 style="color: #CC0B2A; font-weight: 400; font-size: 30px;">
+          CSU IS THE MOST CONSEQUENTIAL PUBLIC UNIVERSITY SYSTEM IN THE NATION
+        </h3>
+        <p class="lh-base mt-4 mb-3 fs-5 pt-3 pt-md-0 fs-md-5 lead">We are the nation's most diverse four-year
+          university—ethnically, economically and <br> academically. We transform individual lives and drive
+          California’s economy. Our students <br> graduate with less (or no) debt and more job-ready skills, empowered
+          to thrive individually <br> and to contribute mightily to the success of their communities and state.</p>
+        <p class="lead">See more of the top “<a href="#" style="color: #CC0B2A; " id="reason-link">10 Reasons to Choose
+            the CSU.</a> ”</p>
+      </div>
+    </div>
+    <hr style="display: block; width:85%; margin: 15px auto;">
+
+    <div class="row mt-1 pb-3 justify-content-evenly">
+      <div class="col-12 text-center my-5 ">
+        <h2 style="font-size: 24px; font-weight:500;">IN THE SPOTLIGHT</h2>
+      </div>
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src="CSUSM - rankings.jpg.png" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">CHANCELLOR’S STATEMENT ON DACA DECISION OF FIFTH CIRCUIT COURT OF
+            APPEALS</a>
+        </p>
+
+      </div>
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src="students-on-campus_45762803575_o.jpg" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">CSU’S DILCIE PEREZ TAPPED FOR STATEWIDE TASK FORCE TO ADVANCE
+            HOUSING SECURITY</a>
+        </p>
+
+      </div>
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src=" CSU SAC STATE PRES.png" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">CSU’S DILCIE PEREZ TAPPED FOR STATEWIDE TASK FORCE TO ADVANCE
+            HOUSING SECURITY</a>
+        </p>
+
+      </div>
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src=" slider-3.jpg" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">STATEMENT ON PENDING RETIREMENT OF CALIFORNIA STATE UNIVERSITY,
+            SACRAMENTO PRESIDENT ROBERT S. NELSEN</a>
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="row mt-1 pb-3 justify-content-evenly">
+
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src=" CSUSM - rankings.jpg.png" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">CHANCELLOR’S STATEMENT ON DACA DECISION OF FIFTH CIRCUIT COURT OF
+            APPEALS</a>
+        </p>
+
+      </div>
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src=" students-on-campus_45762803575_o.jpg" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">CSU’S DILCIE PEREZ TAPPED FOR STATEWIDE TASK FORCE TO ADVANCE
+            HOUSING SECURITY</a>
+        </p>
+
+      </div>
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src=" CSU SAC STATE PRES.png" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">CSU’S DILCIE PEREZ TAPPED FOR STATEWIDE TASK FORCE TO ADVANCE
+            HOUSING SECURITY</a>
+        </p>
+
+      </div>
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src=" slider-3.jpg" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">STATEMENT ON PENDING RETIREMENT OF CALIFORNIA STATE UNIVERSITY,
+            SACRAMENTO PRESIDENT ROBERT S. NELSEN</a>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row mt-1 pb-3 justify-content-evenly">
+
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src="CSUSM - rankings.jpg.png" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">CHANCELLOR’S STATEMENT ON DACA DECISION OF FIFTH CIRCUIT COURT OF
+            APPEALS</a>
+        </p>
+
+      </div>
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src="students-on-campus_45762803575_o.jpg" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">CSU’S DILCIE PEREZ TAPPED FOR STATEWIDE TASK FORCE TO ADVANCE
+            HOUSING SECURITY</a>
+        </p>
+
+      </div>
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src="CSU SAC STATE PRES.png" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">CSU’S DILCIE PEREZ TAPPED FOR STATEWIDE TASK FORCE TO ADVANCE
+            HOUSING SECURITY</a>
+        </p>
+
+      </div>
+      <div class="col-md-3 col-11 pt-3 pt-md-0">
+        <img src="slider-3.jpg" alt="" class="img-fluid" style="width: 100%;">
+        <p class="lh-base mt-2 news-para"><a href="#">STATEMENT ON PENDING RETIREMENT OF CALIFORNIA STATE UNIVERSITY,
+            SACRAMENTO PRESIDENT ROBERT S. NELSEN</a>
+        </p>
+
+      </div>
+      <div class="col-12 text-center mt-2 mt-md-5">
+        <a href="#" class="btn rounded-2 all-news">All News</a>
+      </div>
+      <div class="col-12 mt-4">
+        <hr style="display: block; width:85%; margin: 20px auto;">
+      </div>
+    </div>
+
+    <div class="row mt-5 mb-3 pb-5 justify-content-evenly">
+      <div class="col-md-5 mb-4 mb-md-0 col-11">
+        <img src="Covid-Hero.jpg" style="width: 100%;" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-5 col-11 pt-0 pb-3">
+        <h3 class="mb-2 mt-2 lh-base" style="font-size: 22px;">
+          THE CSU RESPONDS TO CORONAVIRUS PANDEMIC
+        </h3>
+        <p class="lh-base mb-3 mt-4" style="font-size: 17px;">
+          The safety and well-being of California State University students, faculty and staff are foundational concerns
+          for the institution. On this site, you’ll find Information about the university’s response to the pandemic, as
+          well as links to individual campuses.
+        </p>
+        <a href="#" class="btn rounded-2 p-1 mt-2 all-news">Learn About Response</a>
+      </div>
+    </div>
+
+    <!-- call to action -->
+
+    <div class="row justify-content-evenly text-center mt-5">
+      <div class="col-12" id="cta-body">
+        <h1 class="lh-base text-white  h1">Enroll For Our Various Online Courses <br>
+          Anywhere From The World</h1>
+        <a href="#" class="btn-sm rounded-3 " id="cta-btn">Enroll Now</a>
+      </div>
+    </div>
+
+
+    <!-- testimonials section -->
+    <div class="row pb-4" id="reviews">
+      <div class="col-12  text-center">
+        <h1 class="lh-base" id="review-heading">Testimonials</h1>
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 pt-15 pb-10  mx-auto mt-15">
+            <div class="flex flex-wrap -m-4">
+              <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                <div class="h-full text-center">
+                  <img alt="testimonial"
+                    class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                    src="test-1.png">
+                  <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
+                    taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag
+                    drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+                  <p class="text-gray-600">Senior Product Designer</p>
+                </div>
+              </div>
+              <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                <div class="h-full text-center">
+                  <img alt="testimonial"
+                    class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                    src="test-2.jpg">
+                  <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
+                    taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag
+                    drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ALPER KAMU</h2>
+                  <p class="text-gray-600">UI Develeoper</p>
+                </div>
+              </div>
+              <div class="lg:w-1/3 lg:mb-0 p-4">
+                <div class="h-full text-center">
+                  <img alt="testimonial"
+                    class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                    src="test-3.jpg">
+                  <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
+                    taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag
+                    drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HENRY LETHAM</h2>
+                  <p class="text-gray-600">CTO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <hr style="margin-bottom: 30px;">
+
+    <!-- FAQs  -->
+    <div class="row justify-content-center pt-2 pt-md-2 pb-5">
+      <div class="col-12 pt-1 pt-md-2">
+        <h2 class="lh-base mb-5 text-center" style="font-size: 35px;">FAQs</h2>
+        <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error magni facilis repellat rerum tempora
+                asperiores voluptatibus, at officiis doloribus ratione?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error magni facilis repellat rerum tempora
+                asperiores voluptatibus, at officiis doloribus ratione?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error magni facilis repellat rerum tempora
+                asperiores voluptatibus, at officiis doloribus ratione?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour">
+                Accordion Item #4
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error magni facilis repellat rerum tempora
+                asperiores voluptatibus, at officiis doloribus ratione?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="margin-bottom: 30px;">
+
+    <!-- Contact Us -->
+    <div class="row mt-3 justify-content-evenly pb-5">
+      <div class="col-12 text-center mt-4 mb-5">
+        <h2 style="font-size: 35px;">Contact Us</h2>
+      </div>
+      <div class="col-md-5 col-11 mt-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9318.639743842108!2d-121.79963987309138!3d36.654192366817085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808dfca8e761e057%3A0xcdbf437897f231fd!2sCalifornia%20State%20University%2C%20Monterey%20Bay!5e0!3m2!1sen!2sin!4v1668668121151!5m2!1sen!2sin"
+          height="400" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-md-5 col-11 pt-5 pt-md-0">
+        <p style="font-size: 20px;" class="lh-base">
+          The Wall Street, Survey No. - 12 </p>
+        <p style="color: #1f1f1f;"> Near Global Park, California, USA </p>
+
+        <form class="mt-4">
+          <div class="mb-3">
+            <label for="name" class="form-label">Enter Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+            <div id="name" class="form-text">We'll never share your name with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type Here..."
+              rows="3"></textarea>
+          </div>
+          <div class="mb-1 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn  all-news mt-3">Submit</button>
+        </form>
+
+      </div>
+    </div>
+
+
+    <!-- container end -->
+  </div>
+
+  <!-- footer -->
+
+
+
+
+  <div class="container-fluid " id="footer-body">
+    <footer class="text-gray-600 body-font">
+      <div class="container px-5 pt-12 mx-auto mt-10">
+        <div class="flex flex-wrap md:text-left text-center order-first ">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4  footer-link">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">Attend</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Campuses</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Admissions</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Paying for College</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Transfer</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Student Services</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">International</a>
+              </li>
+            </nav>
+          </div>
+
+
+
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4 footer-link">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">Impact of the CSU</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Diversity</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Student Success</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Research</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Alumni </a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Sustainability</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Business & Economy </a>
+              </li>
+            </nav>
+          </div>
+
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4 footer-link">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">The CSU System </h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">About the CSU</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Why the CSU Matters</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Leadership</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Faculty & Staff</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Data Insights </a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">CSU Budget </a>
+              </li>
+            </nav>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4 footer-link">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3"> CSU CAMPUSES</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links"> San José</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links"> San Luis Obispo</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links"> San Marcos</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Stanislaus</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Sonoma </a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800 footer-links">Jos Angles</a>
+              </li>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- bottom to top btn -->
+      <p class="float-end mb-1">
+        <a href="#"><i class="bi bi-arrow-up-square-fill fixed-end" id="back-to-top"></i></a>
+      </p>
+
+      <div class="bg-gray-100" id="footer-end">
+        <div class="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
+          <a href="index.html"
+            class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="logo.png" alt="" class="img-fluid mt-1 " style="width: 150px;
+         ">
+
+          </a>
+          <p class="text-lg text-gray-900 sm:ml-6 sm:mt-0 mt-4"><i class="bi bi-c-circle me-1"></i> 2022 Cyf Platforms
+            Inc. —
+            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1 footer-links"
+              target="_blank">@Santosh_bhaykatte</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500 footer-links">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500 footer-links">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                </path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500 footer-links">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500 footer-links">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+ 
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
