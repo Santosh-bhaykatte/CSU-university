@@ -30,7 +30,7 @@ This project is a **frontend-only** clone of the original CSU website, developed
 
 
 ## 🔗 Click On The Link To Visit
-https://santosh-bhaykatte.github.io/CSU-university/
+https://santosh-bhaykatte.github.io/California-State-University-Website-Clone-/
 
 ## 📩 Connect with Me
 🔗 LinkedIn - (www.linkedin.com/in/santosh-bhaykatte)
