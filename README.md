@@ -29,7 +29,14 @@ This project is a **frontend-only** clone of the original CSU website, developed
 - **Bootstrap-Powered** – Utilizes Bootstrap components effectively
 - **Pixel-Perfect Clone** – Matches the original CSU website design
 
-## Future Enhancements
+## 📌 Future Enhancements
 - **Backend Integration:** Incorporate dynamic content using PHP, Node.js, or Django.
 - **Enhanced Animations:** Improve visual interactivity.
+
+
+## 🔗 Click On The Link To Visit
+https://santosh-bhaykatte.github.io/CSU-university/
+
+## 📩 Connect with Me
+🔗 LinkedIn - (www.linkedin.com/in/santosh-bhaykatte)
 
