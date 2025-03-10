@@ -20,7 +20,7 @@ This project is a **frontend-only** clone of the original CSU website, developed
 
 
 ## 📸 Screenshots
-*(Add relevant screenshots of your project here)*
+![App Screenshot]()
 
 
 ## 🎯 Key Features
