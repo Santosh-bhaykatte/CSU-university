@@ -18,11 +18,6 @@ This project is a **frontend-only** clone of the original CSU website, developed
 - **JavaScript** – Enhancing interactivity
 - **Bootstrap** – Implementing responsive & modern UI components
 
-
-## 📸 Screenshots
-![App Screenshot]()
-
-
 ## 🎯 Key Features
 - **Responsive Design** – Works across devices (mobile, tablet, desktop)
 - **Modern UI/UX** – Smooth transitions and intuitive layout
